@@ -1,7 +1,9 @@
 name: .Platform - Toggle AVM workflows
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - **
     inputs:
       targetState:
         type: choice
